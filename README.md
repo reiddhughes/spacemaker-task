@@ -14,7 +14,7 @@ The Spacemaker software is a web application. The platform is primarily written 
 List of proposed solutions | Work surface for a selected solution | Statistics & Tools available for selected solution
  
 Prerequisites
-● Experience with HTML/CSS/JavaScript.
+- Experience with HTML/CSS/JavaScript.
 
 Task
 The task is to make a simple web application based on the specifications mentioned above. Attached to this task you should find two JSON-files containing one GeoJSON feature collection each. Each feature collection represents a proposed solution and contains a list of polygons. The left panel should be a list of proposed solutions (one solution per JSON-file). The work surface should be a map with the polygons for the selected solution displayed on a map. The right panel should have area statistics for the selected solution.
