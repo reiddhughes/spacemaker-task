@@ -1,6 +1,32 @@
-# Getting Started with Create React App
+# Solution Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The solution uses reeact and semantic-ui for the overall framework.  It uses maplibre to generate a map
+and then loads the polygons onto a layer.  The polygons are clickable and change color when clicked.  
+A limiting factor right now is that the features in the layer are not easily editable.  The next step would
+be to look up a drawing library that can more dynamically handle polygons.
+
+# Prompt
+Candidate Task: Software Engineer - State Management
+
+Background
+The Spacemaker software is a web application. The platform is primarily written in JavaScript using a framework. In our platform users can create, edit and review multiple proposed solutions for a project for a specific site. We facilitate multiple workflows and ways to create and edit these proposed solutions by providing them with a ​work surface​. In addition, all the relevant, tool specific features and statistics for a selected solution are also displayed at all times. If you add the mentioned tools together, that leaves us with the following view:
+
+List of proposed solutions | Work surface for a selected solution | Statistics & Tools available for selected solution
+ 
+Prerequisites
+● Experience with HTML/CSS/JavaScript.
+
+Task
+The task is to make a simple web application based on the specifications mentioned above. Attached to this task you should find two JSON-files containing one GeoJSON feature collection each. Each feature collection represents a proposed solution and contains a list of polygons. The left panel should be a list of proposed solutions (one solution per JSON-file). The work surface should be a map with the polygons for the selected solution displayed on a map. The right panel should have area statistics for the selected solution.
+Requirements
+● It should be possible to select two polygons and do the following operations on them: union​ and ​intersect​. The resulting polygon of the operation should replace the selected polygons. The app should keep the current state of the polygons until the page is reloaded. It is not necessary to persist the data on disk.
+● It should be possible to switch between the proposed solutions. Edited polygons should remain in the same state they are left in when switching between solutions.
+● The total area of the selected polygons should be displayed in the right panel.
+● You are free to choose any language, frameworks and/or libraries to solve the task.
+● The code should be well-structured and easy to extend.
+● Document any assumptions that you make.
+● Deliver the task with a zip-file or a link to a GitHub repository. The repository should
+include a README-file.
 
 ## Available Scripts
 
@@ -13,58 +39,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
