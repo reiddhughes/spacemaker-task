@@ -19,13 +19,13 @@ Prerequisites
 Task
 The task is to make a simple web application based on the specifications mentioned above. Attached to this task you should find two JSON-files containing one GeoJSON feature collection each. Each feature collection represents a proposed solution and contains a list of polygons. The left panel should be a list of proposed solutions (one solution per JSON-file). The work surface should be a map with the polygons for the selected solution displayed on a map. The right panel should have area statistics for the selected solution.
 Requirements
-● It should be possible to select two polygons and do the following operations on them: union​ and ​intersect​. The resulting polygon of the operation should replace the selected polygons. The app should keep the current state of the polygons until the page is reloaded. It is not necessary to persist the data on disk.
-● It should be possible to switch between the proposed solutions. Edited polygons should remain in the same state they are left in when switching between solutions.
-● The total area of the selected polygons should be displayed in the right panel.
-● You are free to choose any language, frameworks and/or libraries to solve the task.
-● The code should be well-structured and easy to extend.
-● Document any assumptions that you make.
-● Deliver the task with a zip-file or a link to a GitHub repository. The repository should
+- It should be possible to select two polygons and do the following operations on them: union​ and ​intersect​. The resulting polygon of the operation should replace the selected polygons. The app should keep the current state of the polygons until the page is reloaded. It is not necessary to persist the data on disk.
+- It should be possible to switch between the proposed solutions. Edited polygons should remain in the same state they are left in when switching between solutions.
+- The total area of the selected polygons should be displayed in the right panel.
+- You are free to choose any language, frameworks and/or libraries to solve the task.
+- The code should be well-structured and easy to extend.
+- Document any assumptions that you make.
+- Deliver the task with a zip-file or a link to a GitHub repository. The repository should
 include a README-file.
 
 ## Available Scripts
